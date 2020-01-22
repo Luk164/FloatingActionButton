@@ -168,7 +168,7 @@ For more usage examples check the **sample** project.
 Please see the [Changelog](https://github.com/sougata-chatterjee/FloatingActionButton/wiki/Change-Log) page to see what's recently changed.
 
 # Credits
-I used [Clans FAB Library](https://github.com/Clans/FloatingActionButton) and am currently maintaining it.
+I used a fork of [Clans FAB Library](https://github.com/Clans/FloatingActionButton) for a personal project. I will not be actively maintaining it.
 
 # License
 ```
