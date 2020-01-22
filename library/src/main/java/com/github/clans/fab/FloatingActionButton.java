@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.Outline;
 import android.graphics.Paint;
+import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
@@ -33,10 +34,11 @@ import android.view.ViewGroup;
 import android.view.ViewOutlineProvider;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageButton;
+import androidx.appcompat.widget.AppCompatImageButton;
+
 import android.widget.TextView;
 
-public class FloatingActionButton extends ImageButton {
+public class FloatingActionButton extends AppCompatImageButton {
 
     public static final int SIZE_NORMAL = 0;
     public static final int SIZE_MINI = 1;
@@ -109,11 +111,11 @@ public class FloatingActionButton extends ImageButton {
         init(context, attrs, defStyleAttr);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public FloatingActionButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        init(context, attrs, defStyleAttr);
-    }
+//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+//    public FloatingActionButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+//        super(context, attrs, defStyleAttr, defStyleRes);
+//        init(context, attrs, defStyleAttr);
+//    }
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
         TypedArray attr = context.obtainStyledAttributes(attrs, R.styleable.FloatingActionButton, defStyleAttr, 0);
@@ -708,7 +710,7 @@ public class FloatingActionButton extends ImageButton {
 
         @Override
         public int getOpacity() {
-            return 0;
+            return PixelFormat.UNKNOWN;
         }
     }
 

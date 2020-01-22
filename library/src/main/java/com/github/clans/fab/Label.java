@@ -7,6 +7,7 @@ import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Outline;
 import android.graphics.Paint;
+import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
@@ -24,9 +25,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.view.animation.Animation;
-import android.widget.TextView;
 
-public class Label extends TextView {
+public class Label extends androidx.appcompat.widget.AppCompatTextView {
 
     private static final Xfermode PORTER_DUFF_CLEAR = new PorterDuffXfermode(PorterDuff.Mode.CLEAR);
 
@@ -371,7 +371,7 @@ public class Label extends TextView {
 
         @Override
         public int getOpacity() {
-            return 0;
+            return PixelFormat.UNKNOWN;
         }
     }
 }
