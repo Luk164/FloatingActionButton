@@ -8,10 +8,6 @@ android {
         targetSdkVersion 29
         versionCode Integer.parseInt(VERSION_CODE)
         versionName VERSION_NAME
-
-        lintOptions{
-            disable 'MissingDefaultResource'
-        }
     }
     buildTypes {
         release {

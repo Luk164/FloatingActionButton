@@ -19,9 +19,11 @@
         android:paddingTop="8dp"
         android:paddingRight="8dp"
         android:paddingLeft="60dp"
-        android:fontFamily="sans-serif-light"
+        app:fontFamily="sans-serif-light"
         android:background="@color/app_primary"
-        android:elevation="4dp"/>
+        android:elevation="4dp"
+        android:paddingStart="60dp"
+        android:paddingEnd="8dp" />
 
     <TextView
         android:layout_width="match_parent"

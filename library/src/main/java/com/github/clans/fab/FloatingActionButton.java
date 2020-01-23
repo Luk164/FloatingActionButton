@@ -550,16 +550,9 @@ public class FloatingActionButton extends AppCompatImageButton {
             int action = event.getAction();
             switch (action) {
                 case MotionEvent.ACTION_UP:
-                    if (label != null) {
-                        label.onActionUp();
-                    }
-                    onActionUp();
-                    break;
 
                 case MotionEvent.ACTION_CANCEL:
-                    if (label != null) {
-                        label.onActionUp();
-                    }
+                    label.onActionUp();
                     onActionUp();
                     break;
             }

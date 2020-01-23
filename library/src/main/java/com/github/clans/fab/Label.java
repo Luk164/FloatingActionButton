@@ -290,9 +290,6 @@ public class Label extends androidx.appcompat.widget.AppCompatTextView {
         int action = event.getAction();
         switch (action) {
             case MotionEvent.ACTION_UP:
-                onActionUp();
-                mFab.onActionUp();
-                break;
 
             case MotionEvent.ACTION_CANCEL:
                 onActionUp();
